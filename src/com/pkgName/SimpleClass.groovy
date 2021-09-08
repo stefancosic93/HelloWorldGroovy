@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-package com.cleverbuilder
+package com.pkgName
 
 class SimpleClass {
    String name
