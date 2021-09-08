@@ -1,8 +1,8 @@
 //@Library('HelloWorldGroovy')_
 def modules = [:]
 
-import pkgName.SimpleClass
-import pkgName.GlobalVars
+import com.pkgName.SimpleClass
+import com.pkgName.GlobalVars
 
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
