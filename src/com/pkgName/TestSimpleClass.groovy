@@ -1,4 +1,6 @@
 #!/usr/bin/env groovy
+@Library("junit-4.3.jar") _
+import junit.framework.TestCase
 
 package com.pkgName
 
