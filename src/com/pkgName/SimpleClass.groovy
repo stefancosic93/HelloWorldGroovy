@@ -9,3 +9,5 @@ class SimpleClass {
       this.age += years
    }
 }
+
+return new SimpleClass()
