@@ -1,4 +1,4 @@
-@Library('HelloWorldGroovy')_
+//@Library('HelloWorldGroovy')_
  
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
