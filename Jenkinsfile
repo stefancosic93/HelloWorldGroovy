@@ -32,4 +32,14 @@ node {
         }
       
     }
+    
+    stage('Stage 4 - Unit test') {
+
+        script {
+          Object t1 = load 'src/com/pkgName/TestSimpleClass.groovy'
+          Object test1 = t1.createTest()
+            test1.test1()
+        }
+
+    }
 }
