@@ -1,4 +1,5 @@
-@Library('mylibrary')_
+@Library('com.pkgName.SimpleClass')_
+@Library('com.pkgName.GlobalVars')_
 
 //@Library('HelloWorldGroovy')_
 def modules = [:]
