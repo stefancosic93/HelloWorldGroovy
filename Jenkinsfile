@@ -18,15 +18,14 @@ pipeline {
     }
     stage('Stage 2') {
       steps {
-         script {
-              modules.global = load "src/com/pkgName/GlobalVars.groovy"
-              echo 'The value of foo is : ' + modules.global.foo
-           
-              modules.simple = load "src/com/pkgName/SimpleClass.groovy"
-              modules.simple.age = 21
-              modules.simple.increaseAge(10)
-              echo 'Incremented age, is now : ' + modules.simple.age
-          }
+                echo 'The value of foo is : ' + GlobalVars.foo
+
+                script {
+                    def person = new SimpleClass()
+                    person.age = 21
+                    person.increaseAge(10)
+                    echo 'Incremented age, is now : ' + person.age
+                }
       }
     }
     
