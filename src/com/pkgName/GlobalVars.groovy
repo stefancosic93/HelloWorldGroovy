@@ -10,3 +10,5 @@ class GlobalVars {
    // import com.pkgName.GlobalVars
    // println GlobalVars.foo
 }
+
+return new GlobalVars()
