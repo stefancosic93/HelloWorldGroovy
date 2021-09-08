@@ -1,5 +1,5 @@
-
 #!/usr/bin/env groovy
+
 package com.pkgName
 
 class GlobalVars {
