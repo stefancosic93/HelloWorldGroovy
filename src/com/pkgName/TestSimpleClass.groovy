@@ -2,15 +2,6 @@
 
 package com.pkgName
 
-//@Grab(org.robolectric:junit:4.6.1)
-
-@Grab(group='junit', module='junit', version='4.13.2', scope='test')
-import junit.framework.TestCase
-
-
-//import junit.framework.TestCase
-//import org.junit.Test
-
 class TestSimpleClass extends TestCase {
     // create a simple class
     SimpleClass sc = new SimpleClass("Stefan", 23)
