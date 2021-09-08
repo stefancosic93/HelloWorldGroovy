@@ -4,8 +4,8 @@ import junit.framework.TestCase
 
 package com.pkgName
 
-import junit.framework.TestCase
-import org.junit.Test
+//import junit.framework.TestCase
+//import org.junit.Test
 
 class TestSimpleClass extends TestCase {
     // create a simple class
