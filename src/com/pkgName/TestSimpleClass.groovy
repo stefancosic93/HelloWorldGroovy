@@ -1,4 +1,6 @@
 #!/usr/bin/env groovy
+@Grab(org.robolectric:junit:4.6.1)
+import junit.framework.TestCase
 
 package com.pkgName
 
