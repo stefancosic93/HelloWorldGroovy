@@ -7,9 +7,11 @@ pipeline {
   stages {
     stage('Stage 1') {
       steps {
-        echo 'Hello world!'
-        modules.first = load "HelloWorldGroovy.groovy"
-        modules.first.call('Stefan') 
+          script{
+            echo 'Hello world!'
+            modules.first = load "HelloWorldGroovy.groovy"
+            modules.first.call('Stefan') 
+          }
       }
     }
   }
