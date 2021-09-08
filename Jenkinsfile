@@ -17,17 +17,7 @@ pipeline {
           }
       }
     }
-    stage('Stage 2') {
-      steps {
-         script {
-              echo 'The value of foo is : ' + GlobalVars.foo
-              def person = new SimpleClass()
-              person.age = 21
-              person.increaseAge(10)
-              echo 'Incremented age, is now : ' + person.age
-          }
-      }
-    }
+
     
   }
 } 
