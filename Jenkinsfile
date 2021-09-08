@@ -1,4 +1,3 @@
-@Library('mylibrary') _
 def modules = [:]
 
 //import com.pkgName.SimpleClass
