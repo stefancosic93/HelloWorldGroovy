@@ -1,7 +1,7 @@
 def modules = [:]
 
 //import com.pkgName.SimpleClass
-//import com.pkgName.GlobalVars
+import com.pkgName.GlobalVars
 
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
