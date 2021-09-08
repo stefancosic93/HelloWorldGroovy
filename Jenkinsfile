@@ -1,7 +1,7 @@
 def modules = [:]
 
 //import com.pkgName.SimpleClass
-import com.pkgName.GlobalVars
+//import com.pkgName.GlobalVars
 
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
@@ -18,8 +18,10 @@ pipeline {
     }
     stage('Stage 2') {
       steps {
-           echo 'The value of foo is : ' + GlobalVars.foo
-
+           //echo 'The value of foo is : ' + GlobalVars.foo
+          Object p = load 'src/com/pkgName/SimpleClass.groovy'
+          Object person = p.createPerson('STefan2')
+          person.print(this)
       }
     }
     
