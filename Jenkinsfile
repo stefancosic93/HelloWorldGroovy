@@ -15,16 +15,19 @@ pipeline {
             modules.first = load "vars/HelloWorldScript.groovy"
             modules.first.callName('Stefan') 
           }
-        
-            echo 'The value of foo is : ' + GlobalVars.foo
-
-            script {
-                def person = new SimpleClass()
-                person.age = 21
-                person.increaseAge(10)
-                echo 'Incremented age, is now : ' + person.age
-            }
       }
     }
+    stage('Stage 2') {
+      steps {
+         script {
+              echo 'The value of foo is : ' + GlobalVars.foo
+              def person = new SimpleClass()
+              person.age = 21
+              person.increaseAge(10)
+              echo 'Incremented age, is now : ' + person.age
+          }
+      }
+    }
+    
   }
 } 
