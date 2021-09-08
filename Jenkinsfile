@@ -1,5 +1,6 @@
 //@Library('HelloWorldGroovy')_
  
+import var.HelloWorldGroovy
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
   agent any
