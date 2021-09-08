@@ -21,7 +21,10 @@ pipeline {
         script {
            //echo 'The value of foo is : ' + GlobalVars.foo
           Object p = load 'src/com/pkgName/SimpleClass.groovy'
-          Object person = p.createPerson('STefan2')
+          Object person = p.createPerson('Stefan')
+          person.age = 21
+          person.increaseAge(10)
+          echo 'Incremented age, is now : ' + person.age
           person.print(this)
         }
       }
