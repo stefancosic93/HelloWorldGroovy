@@ -18,10 +18,12 @@ pipeline {
     }
     stage('Stage 2') {
       steps {
+        script {
            //echo 'The value of foo is : ' + GlobalVars.foo
           Object p = load 'src/com/pkgName/SimpleClass.groovy'
           Object person = p.createPerson('STefan2')
           person.print(this)
+        }
       }
     }
     
