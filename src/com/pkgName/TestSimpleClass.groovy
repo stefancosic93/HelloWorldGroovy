@@ -3,9 +3,8 @@
 package com.pkgName
 
 //@Grab(org.robolectric:junit:4.6.1)
-@Grapes(
-    @Grab(group='junit', module='junit', version='4.13.2', scope='test')
-)
+
+@Grab(group='junit', module='junit', version='4.13.2', scope='test')
 import junit.framework.TestCase
 
 
