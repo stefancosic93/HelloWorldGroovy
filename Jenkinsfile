@@ -1,9 +1,8 @@
-@Library('SimpleClass')_
-@Library('GlobalVars')_
+@Library('mylibrary') _
 def modules = [:]
 
-import com.pkgName.SimpleClass
-import com.pkgName.GlobalVars
+//import com.pkgName.SimpleClass
+//import com.pkgName.GlobalVars
 
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
