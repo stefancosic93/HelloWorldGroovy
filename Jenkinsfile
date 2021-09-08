@@ -1,3 +1,5 @@
+@Library('mylibrary') _
+
 //@Library('HelloWorldGroovy')_
 def modules = [:]
 
