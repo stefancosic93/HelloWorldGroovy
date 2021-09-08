@@ -1,8 +1,13 @@
 #!/usr/bin/env groovy
-@Grab(org.robolectric:junit:4.6.1)
-import junit.framework.TestCase
 
 package com.pkgName
+
+//@Grab(org.robolectric:junit:4.6.1)
+@Grapes(
+    @Grab(group='junit', module='junit', version='4.13.2', scope='test')
+)
+import junit.framework.TestCase
+
 
 //import junit.framework.TestCase
 //import org.junit.Test
