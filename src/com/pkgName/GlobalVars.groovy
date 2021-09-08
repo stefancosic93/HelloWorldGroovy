@@ -9,6 +9,14 @@ class GlobalVars {
    //
    // import com.pkgName.GlobalVars
    // println GlobalVars.foo
+   
+    public void print(def script) {
+        script.sh "echo " + this.foo
+    }
 }
 
-return new GlobalVars()
+GlobalVars createGlobalVars() {
+   new GlobalVars()
+}
+
+return this
