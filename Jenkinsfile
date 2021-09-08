@@ -1,4 +1,5 @@
-//@Library('HelloWorldGroovy')_
+@Library('SimpleClass')_
+@Library('GlobalVars')_
 def modules = [:]
 
 import com.pkgName.SimpleClass
