@@ -23,11 +23,9 @@ pipeline {
               echo 'The value of foo is : ' + modules.global.foo
            
               modules.simple = load "src/com/pkgName/SimpleClass.groovy"
-
-              def person = new modules.simple()
-              person.age = 21
-              person.increaseAge(10)
-              echo 'Incremented age, is now : ' + person.age
+              modules.simple.age = 21
+              modules.simple.increaseAge(10)
+              echo 'Incremented age, is now : ' + modules.simple.age
           }
       }
     }
