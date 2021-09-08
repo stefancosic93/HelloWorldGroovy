@@ -5,8 +5,9 @@ class SimpleClass {
    String name
    Integer age
 
-   SimpleClass(String name) {
-      this.name = name;
+   SimpleClass(String name, Integer age) {
+      this.name = name
+      this.age = age
    }
 
    public void print(def script) {
@@ -18,8 +19,8 @@ class SimpleClass {
    }
 }
 
-SimpleClass createPerson(String name) {
-    new SimpleClass(name)
+SimpleClass createPerson(String name, Integer age) {
+    new SimpleClass(name, age)
 }
 
 return this
