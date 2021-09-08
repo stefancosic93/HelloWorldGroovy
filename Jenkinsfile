@@ -1,4 +1,5 @@
 //@Library('HelloWorldGroovy')_
+def modules = [:]
 
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
@@ -7,7 +8,8 @@ pipeline {
     stage('Stage 1') {
       steps {
         echo 'Hello world!'
-        HelloWorldGroovy('Stefan')
+        modules.first = load "HelloWorldGroovy.groovy"
+        modules.first.call('Stefan') 
       }
     }
   }
