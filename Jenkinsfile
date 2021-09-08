@@ -1,3 +1,4 @@
+@Library('junit.framework.TestCase')_
 def modules = [:]
 
 node {
