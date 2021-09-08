@@ -9,7 +9,7 @@ pipeline {
       steps {
           script{
             echo 'Hello world!'
-            modules.first = load "HelloWorldGroovy.groovy"
+            modules.first = load "HelloWorldScript.groovy"
             modules.first.call('Stefan') 
           }
       }
