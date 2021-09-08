@@ -2,7 +2,7 @@ def modules = [:]
 
 node {
     stage('Stage 1 - Build') {
-          sh 'make' 
+        
           script{
             echo 'Hello world!'
             modules.first = load "vars/HelloWorldScript.groovy"
