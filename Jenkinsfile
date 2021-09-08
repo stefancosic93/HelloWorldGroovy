@@ -33,7 +33,8 @@ pipeline {
       steps {
         script {
           Object gv = load 'src/com/pkgName/GlobalVars.groovy'
-          echo 'GlobalVar Foo: ' + gv.foo
+          Object globalVar = gv.createGlobalVars()
+          globalVar.print(this)
         }
       }
     }
