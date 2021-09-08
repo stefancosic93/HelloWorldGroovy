@@ -1,7 +1,12 @@
+#!/usr/bin/env groovy
+
+package com.pkgName
+
 import junit.framework.TestCase
 import org.junit.Test
 
 class TestSimpleClass extends TestCase {
+    // create a simple class
     SimpleClass sc = new SimpleClass("Stefan", 23)
 
     @Test
@@ -17,3 +22,9 @@ class TestSimpleClass extends TestCase {
     }
 
 }
+
+TestSimpleClass createTest() {
+    new TestSimpleClass()
+}
+
+return this
